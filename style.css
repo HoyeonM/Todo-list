@@ -1,0 +1,116 @@
+body {
+    background: #edf0f1;
+    padding: 80px;
+}
+
+body, input, button {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+#wrapper {
+    overflow: hidden;
+    width: 500px;
+    margin: auto;
+    background-color: #afccd6;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    padding: 15px;
+    z-index: 5;
+    background: #b2b2bd;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+}
+
+header input {
+    width: 90%;
+    height: 50px;
+    padding-left: 20px;
+    color: white;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.356);
+    border-radius: 5px 25px 25px 5px;
+    border: 0px;
+    list-style-type: none;
+}
+
+header input:focus{ /*get rid of border when click the input box*/
+    outline: none;
+}
+
+header button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 25%;
+    position:absolute;
+    top:15px;
+    right:40px;
+    z-index:2;
+    background: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+ul.todo {
+    width: 100%;
+    list-style-type: none; /*get rid of default list style*/
+}
+
+ul.todo li {
+    width: 75%;
+    min-height: 20px;
+    font-size: 14px;
+    font-weight: 100;
+    color: black;
+    list-style-type: none;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px;
+    margin-bottom: 15px;
+    word-break: break-word; /*this makes all word fit in the box*/
+}
+
+ul.todo li .buttons { /*position of remove & complete*/
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.todo li .buttons button { /*style of remove & complete button*/
+    width: 50px;
+    height: 50px;
+    background: none;
+    position: relative;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+ul.todo#completed { /*makes position of completed items*/
+    position: relative;
+    padding: 60px;
+    right: 18px;
+    width: 100%;
+}
+
+ul.todo#completed:before { /*inset a line*/
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 28%;
+}
+
+
